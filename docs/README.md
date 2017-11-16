@@ -1,5 +1,6 @@
-Welcome to the home of Tiacxy 3D Printer
 
-Guides hosted on [Dozuki](https://tiacxy.dozuki.com/)
+## Welcome to the home of Tiacxy 3D Printer
 
-Eventually, there will be in a [book](https://perryismangil.gitbooks.io/building-a-3d-printer/content/) 
+Here are the [guides to build Tiacxy.](https://tiacxy.eu/guides)
+
+Eventually, there will be in a [book](https://book.tiacxy.eu)

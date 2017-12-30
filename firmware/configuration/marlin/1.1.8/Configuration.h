@@ -454,7 +454,7 @@
 
 // Uncomment one of these options to enable CoreXY, CoreXZ, or CoreYZ kinematics
 // either in the usual order or reversed
-//#define COREXY
+#define COREXY
 //#define COREXZ
 //#define COREYZ
 //#define COREYX
@@ -1635,13 +1635,6 @@
 //
 //#define MKS_12864OLED          // Uses the SH1106 controller (default)
 #define MKS_12864OLED_SSD1306  // Uses the SSD1306 controller
-
-#if defined (MKS_12864OLED_SSD1306)
-  #define DOGLCD
-  #define U8GLIB_SSD1306
-  #define REPRAP_DISCOUNT_SMART_CONTROLLER
-  #define NEWPANEL
-#endif
 
 // Silvergate GLCD controller
 // http://github.com/android444/Silvergate

@@ -354,10 +354,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  // E3D V6 Lite for 230C
-  #define  DEFAULT_Kp 28.08
-  #define  DEFAULT_Ki 2.48
-  #define  DEFAULT_Kd 79.36
+  // E3D V6 Lite on 24V for 230C
+  #define  DEFAULT_Kp 26.88
+  #define  DEFAULT_Ki 2.10
+  #define  DEFAULT_Kd 85.88
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -685,7 +685,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 0  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 0  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 0.2   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER 0.1   // Z offset: -below +above  [the nozzle]
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -900,8 +900,8 @@
   #define G26_MESH_VALIDATION   // Enable G26 mesh validation
   #if ENABLED(G26_MESH_VALIDATION)
     #define MESH_TEST_NOZZLE_SIZE     0.4   // (mm) Diameter of primary nozzle.
-    #define MESH_TEST_LAYER_HEIGHT    0.2   // (mm) Default layer height for the G26 Mesh Validation Tool.
-    #define MESH_TEST_HOTEND_TEMP   225.0   // (°C) Default nozzle temperature for the G26 Mesh Validation Tool.
+    #define MESH_TEST_LAYER_HEIGHT    0.3   // (mm) Default layer height for the G26 Mesh Validation Tool.
+    #define MESH_TEST_HOTEND_TEMP   230.0   // (°C) Default nozzle temperature for the G26 Mesh Validation Tool.
     #define MESH_TEST_BED_TEMP       70.0   // (°C) Default bed temperature for the G26 Mesh Validation Tool.
   #endif
 
@@ -962,8 +962,8 @@
 
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 1              // Mesh inset margin on print area
-  #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
+  #define MESH_INSET 10             // Mesh inset margin on print area
+  #define GRID_MAX_POINTS_X 3     // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   #define UBL_PROBE_PT_1_X 39       // Probing points for 3-Point leveling of the mesh
